@@ -1,3 +1,6 @@
+cordova.define("com.feedhenry.plugins.stream.StreamManager", function(require, exports, module) { 
+
+var cordova = require('cordova');
 var exec = require("cordova/exec");
 
 var dummysuccess=function(res){};
@@ -80,11 +83,6 @@ Audio.prototype.failure = function(act, result) {
   };
 };
 
-cordova.addConstructor(function() {
-                        
-    if(!window.plugins)        {
-        window.plugins = {};
-    }
-        
     window.plugins.stream = new Audio();
+
 });
