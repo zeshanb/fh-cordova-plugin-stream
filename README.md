@@ -14,13 +14,13 @@ cordova platform add android
 <li>
 <h2>Install:</h2>
 
-In windows CMD or Terminal cd into your project folder:
+In windows CMD or mac terminal cd into your project folder:
 
 cd Project
 
 type and enter command:
 <pre>
-cordova add plugin https://git-repository-url
+cordova add plugin https://github.com/zeshanb/fh-cordova-plugin-stream
 </pre>
 </li>
 
@@ -38,9 +38,9 @@ cordova build android
 
 <h3>To play audio stream use the following in your javascript code:</h3>
 <pre>
-window.plugins.stream.action({act:'play', path:"http://full-url-of-your-audio-streaming-server" });
+window.plugins.stream.action({act:'play', path:"http://full-url-of-your-audio-streaming-server:8000/stream.m3u8" });
 </pre>
-Note: Audio stream must use http protocal and can be a m3u8 stream. The audio stream can also use aac codec.
+Note: Audio stream must use http protocal and can be a m3u8 stream. The audio stream can also have aac codec. Can also be a stream coming from icecast or shoutcast server.
 
 <h3>
 To stop audio stream:
