@@ -51,7 +51,7 @@
                 </config-file>
 
                 <js-module src="www/android/StreamManager.js" name="StreamManager">
-                        <clobbers target="StreamManager" />
+                        <clobbers target="window.Stream" />
                 </js-module>
 
                 <config-file target="AndroidManifest.xml" parent="/*">
